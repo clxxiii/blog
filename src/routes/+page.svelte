@@ -11,9 +11,15 @@
 <div class="header">
 	<h1>CLXXIII's Blog</h1>
 </div>
-{@html data.article}
+<article>
+	{@html data.article}
+</article>
 
 <style>
+	article {
+		width: calc(100% - 20px);
+		max-width: 1000px;
+	}
 	h1 {
 		margin: 0;
 		position: relative;
