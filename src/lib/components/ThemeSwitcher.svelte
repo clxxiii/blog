@@ -25,9 +25,10 @@
 <button on:click={click}>
 	{#if $themeStore == 'dark'}
 		<span class="material-symbols-outlined"> light_mode </span>
-	{/if}
-	{#if $themeStore == 'light'}
+	{:else if $themeStore == 'light'}
 		<span class="material-symbols-outlined"> dark_mode </span>
+	{:else}
+		<span class="material-symbols-outlined"> palette </span>
 	{/if}
 </button>
 
