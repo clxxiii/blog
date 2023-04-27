@@ -19,6 +19,7 @@
 	article {
 		width: calc(100% - 20px);
 		max-width: 1000px;
+		margin: auto;
 	}
 	h1 {
 		margin: 0;
