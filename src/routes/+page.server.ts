@@ -1,7 +1,8 @@
 import { getFile } from '$lib/ArticleManager';
 import type { ServerLoad } from '@sveltejs/kit';
 import showdownHighlight from 'showdown-highlight';
-import { Converter } from 'showdown';
+import showdown from 'showdown';
+const { Converter } = showdown;
 const converter = new Converter({
 	tables: true,
 	metadata: true,
