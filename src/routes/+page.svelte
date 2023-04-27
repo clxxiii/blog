@@ -4,7 +4,9 @@
 	export let data;
 </script>
 
-<svelte:head>CLXXIII's Blog Page</svelte:head>
+<svelte:head>
+	<title>CLXXIII's Blog Page</title>
+</svelte:head>
 
 <div class="header">
 	<h1>CLXXIII's Blog</h1>

@@ -8,6 +8,10 @@
 	articles = articles.filter((x) => x.name != 'First'); // Filter out home page
 </script>
 
+<svelte:head>
+	<title>Article List</title>
+</svelte:head>
+
 <div class="articles">
 	{#each articles as article}
 		<ArticleCard post={article} />
