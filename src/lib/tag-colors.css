@@ -1,0 +1,30 @@
+.tag {
+	display: inline-block;
+	padding: 5px 10px;
+	min-width: 3em;
+	margin-right: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: var(--bg3);
+}
+
+.tag[data-name='osu'] {
+	color: white;
+	background-color: deeppink !important;
+}
+
+.tag[data-name='web'] {
+	color: white;
+	background-color: rgb(20, 130, 255) !important;
+}
+
+.tag[data-name='javascript'] {
+	color: white;
+	background-color: #f7df1e !important;
+}
+
+.tag[data-name='svelte'] {
+	color: white;
+	background-color: #ff3e00 !important;
+}
