@@ -1,6 +1,10 @@
 <script lang="ts">
+	import '$lib/markdown.css';
+	import '@catppuccin/highlightjs/css/catppuccin-mocha.css';
 	export let data;
 </script>
+
+<svelte:head>CLXXIII's Blog Page</svelte:head>
 
 <div class="header">
 	<h1>CLXXIII's Blog</h1>

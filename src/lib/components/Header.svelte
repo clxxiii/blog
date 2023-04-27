@@ -18,5 +18,9 @@
 	a {
 		text-transform: uppercase;
 		font-weight: bold;
+		color: var(--link-color);
+	}
+	a:hover {
+		color: var(--link-hover-color);
 	}
 </style>
