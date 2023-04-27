@@ -43,12 +43,14 @@ export const getFolder = async (folder: string) => {
 /**
  * Returns the parsed content of the metadata file, which contains all reviews and articles
  */
-export const getMetadata = async () => {
-	const data = get(metadataStore);
-
-	if (data) {
-		return data;
+export const getMetadata = async (force?: boolean) => {
+	if (!force) {
+		const data = get(metadataStore);
+		if (data) {
+			return data;
+		}
 	}
+
 	console.log('Fetching metadata from repo...');
 	const headers: Headers = new Headers();
 	if (GITLAB_ACCESS_TOKEN) {

@@ -5,7 +5,9 @@
 	let articles: object[] = [];
 	data.articles.forEach((x) => articles.push(x));
 	console.log(articles);
-	articles = articles.filter((x) => x.name != 'First'); // Filter out home page
+	articles = articles
+		.filter((x) => x.name != 'First') // Filter out home page
+		.sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime());
 </script>
 
 <svelte:head>
