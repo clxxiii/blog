@@ -6,6 +6,7 @@ const { Converter } = showdown;
 const converter = new Converter({
 	tables: true,
 	metadata: true,
+	ghCompatibleHeaderId: true,
 	extensions: [
 		showdownHighlight({
 			pre: true,

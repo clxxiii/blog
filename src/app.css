@@ -56,7 +56,8 @@ html[data-theme='dark'] {
 
 html[data-theme='light'] {
 	--background: #fff;
-	--text-color: var(--theme-font-color-base);
+	--text-color: #111;
+	--bold-color: #000;
 	--light-text-color: var(--color-surface-400);
 	--base-2: var(--color-surface-50);
 	--base-3: var(--color-surface-400);
@@ -68,15 +69,21 @@ html[data-theme='light'] {
 @media (prefers-color-scheme: light) {
 	html {
 		--background: #fff;
+		--text-color: #111;
+		--bold-color: #000;
 		--text-color: var(--theme-font-color-base);
 		--light-text-color: var(--color-surface-400);
 		--base-2: var(--color-surface-100);
 		--base-3: var(--color-surface-400);
+		--light-base: var(--color-surface-200);
+		--link-color: var(--color-primary-800);
+		--link-hover-color: var(--color-primary-500);
 	}
 }
 
 body {
 	--heading-font: 'Poiret One';
+	--code-base: #1e1e2e;
 	margin: 0;
 	padding: 0;
 	background: var(--background);

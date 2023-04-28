@@ -44,7 +44,7 @@
 <style>
 	article {
 		width: calc(100% - 20px);
-		max-width: 1000px;
+		max-width: 800px;
 		margin: auto;
 		margin-bottom: 5em;
 	}

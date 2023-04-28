@@ -2,6 +2,15 @@
 	max-width: 100%;
 }
 
+img {
+	border-radius: 10px;
+	margin: auto;
+}
+h1 {
+	font-size: 2.5em;
+	margin: 0.25em 0;
+}
+
 code {
 	position: relative;
 	font-size: 90%;
@@ -17,7 +26,14 @@ code {
 a {
 	position: relative;
 	color: var(--link-color);
-	text-decoration: none;
+}
+
+ul {
+	width: 90%;
+}
+
+b {
+	color: var(--bold-color);
 }
 
 a:hover {
@@ -38,10 +54,6 @@ li {
 
 .size {
 	font-size: calc(100% * var(--i));
-}
-
-ul {
-	width: 90%;
 }
 
 table,
@@ -77,12 +89,17 @@ table {
 pre,
 code {
 	font-family: 'Fira Code', monospace;
+	padding: 3px;
+	border-radius: 0;
+	background-color: var(--code-base);
+	transition: background-color 0.3s ease;
+}
+/* overwrite text bg color */
+code.hljs {
+	background: transparent !important;
 }
 
 pre {
-	background-color: #1e1e2e;
-	color: #81b4db;
-	padding: 10px;
 	border-radius: 10px;
 	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
